@@ -1,0 +1,539 @@
+{% extends 'core/base.html' %}
+{% block title %}APEX MIND{% endblock %}
+
+{% block content %}
+
+<header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">APEX MIND</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О проекте</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">Как работает</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#usage">Применение</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#survey">Опрос</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-label">Adaptive Plan Bot + APEX MIND</p>
+                <h1 class="hero-title">Интеллектуальная экосистема управления строительством</h1>
+                <p class="hero-subtitle">Стройка, которая думает сама</p>
+                <div class="hero-actions">
+                    <a href="#application" class="btn btn-main btn-lg">Станьте пилотным партнёром</a>
+                    <a href="#survey" class="btn btn-outline-light btn-lg">Пройти опрос</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding section-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>О проекте</h2>
+                <p>
+                    APEX MIND — интеллектуальная цифровая платформа для управления строительством.
+                    Решение объединяет данные, помогает видеть реальную картину проекта,
+                    быстрее замечать отклонения и принимать более обоснованные управленческие решения.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <h4>Единая картина проекта</h4>
+                        <p>
+                            Данные о ходе работ, статусах, ресурсах и ключевых событиях
+                            собираются в одном пространстве и становятся понятными для команды.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <h4>Быстрее реакция на риски</h4>
+                        <p>
+                            Платформа помогает заранее замечать отклонения,
+                            снижать влияние человеческого фактора и уменьшать стоимость ошибок.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="info-card h-100">
+                        <h4>Поддержка решений</h4>
+                        <p>
+                            APEX MIND не просто хранит информацию, а помогает анализировать ситуацию,
+                            формировать рекомендации и поддерживать руководителя в сложных сценариях.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-padding section-dark-block">
+        <div class="container">
+            <div class="section-header text-center mb-5 section-header-light">
+                <h2>Как работает</h2>
+                <p>
+                    Система объединяет данные, анализирует их и помогает команде видеть
+                    не только текущее состояние проекта, но и возможные последствия решений.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>Сбор данных</h4>
+                        <p>
+                            Информация из различных источников сводится в единую цифровую среду проекта.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>Аналитика</h4>
+                        <p>
+                            Система выявляет отклонения, взаимосвязи и проблемные зоны на основе текущих показателей.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>Цифровой двойник</h4>
+                        <p>
+                            Формируется цифровая модель состояния проекта и возможных сценариев его развития.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>ИИ-рекомендации</h4>
+                        <p>
+                            Платформа помогает руководителю оценивать варианты действий и их последствия.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>Контроль исполнения</h4>
+                        <p>
+                            Пользователь отслеживает сроки, ресурсы и статусы исполнения в одной системе.
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="feature-card feature-card-dark h-100">
+                        <h4>Непрерывное развитие</h4>
+                        <p>
+                            Система становится точнее по мере накопления данных и расширения сценариев управления.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage" class="section-padding section-light usage-section">
+        <div class="container">
+            <div class="section-header mb-5">
+                <h2>Для кого это</h2>
+                <p>
+                    Решение может использоваться разными участниками строительного процесса —
+                    от заказчика до руководителя строительной площадки.
+                </p>
+            </div>
+    
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-3">
+                    <article class="usage-card h-100">
+                        <div class="usage-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h4>Генподрядчики</h4>
+                        <p>Снижение простоев, экономия на логистике, меньше штрафов, больше прибыли.</p>
+                    </article>
+                </div>
+    
+                <div class="col-md-6 col-xl-3">
+                    <article class="usage-card h-100">
+                        <div class="usage-icon">
+                            <i class="bi bi-building-fill"></i>
+                        </div>
+                        <h4>Заказчики / девелоперы</h4>
+                        <p>Реальная прозрачность, точные прогнозы сроков, снижение инвестиционных рисков.</p>
+                    </article>
+                </div>
+    
+                <div class="col-md-6 col-xl-3">
+                    <article class="usage-card h-100">
+                        <div class="usage-icon">
+                            <i class="bi bi-clipboard2-data-fill"></i>
+                        </div>
+                        <h4>Прорабы и планировщики</h4>
+                        <p>Управление исключениями вместо рутины, автоматические отчёты, мобильное приложение.</p>
+                    </article>
+                </div>
+    
+                <div class="col-md-6 col-xl-3">
+                    <article class="usage-card h-100">
+                        <div class="usage-icon">
+                            <i class="bi bi-diagram-3-fill"></i>
+                        </div>
+                        <h4>Проектные офисы (PMO)</h4>
+                        <p>Единый инструмент контроля качества решений по портфелю проектов.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="section-padding section-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Цифры, которые говорят сами за себя</h2>
+                <p>
+                    Ниже представлены ориентиры ожидаемого эффекта внедрения на пилотных сценариях.
+                </p>
+            </div>
+
+            <div class="stats-note text-center mb-4">
+                *ожидание
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <article class="stats-card h-100">
+                        <h3>40%</h3>
+                        <p>меньше простоев</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="stats-card h-100">
+                        <h3>25%</h3>
+                        <p>сокращение сроков</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="stats-card h-100">
+                        <h3>92%</h3>
+                        <p>точность прогнозов</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="stats-card h-100">
+                        <h3>2.3x</h3>
+                        <p>рост эффективности решений</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advantages" class="section-padding advantages-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Чем мы отличаемся</h2>
+                <p>
+                    APEX MIND — это не просто система учёта, а интеллектуальная экосистема поддержки
+                    управления строительством, объединяющая данные, аналитику и цифровые модели проекта.
+                </p>
+            </div>
+    
+            <div class="advantages-box">
+                <div class="advantages-intro">
+                    <h3>Не просто контроль, а поддержка решений</h3>
+                    <p>
+                        Платформа создаётся с фокусом на реальные задачи строительного управления:
+                        прозрачность процессов, координацию участников, анализ рисков и поддержку принятия решений.
+                        В отличие от разрозненных цифровых инструментов, APEX MIND формирует единое рабочее пространство,
+                        в котором информация становится связанной, понятной и управляемой.
+                    </p>
+                </div>
+    
+                <div class="row g-4 advantages-grid-custom">
+                    <div class="col-md-6">
+                        <div class="adv-card">
+                            <div class="adv-number">01</div>
+                            <h4>Единая цифровая среда</h4>
+                            <p>Вместо набора отдельных инструментов пользователь получает единую систему работы с проектом.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="adv-card">
+                            <div class="adv-number">02</div>
+                            <h4>Поддержка управленческих решений</h4>
+                            <p>Платформа помогает анализировать ситуацию и действовать, а не только хранить информацию.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="adv-card">
+                            <div class="adv-number">03</div>
+                            <h4>Ориентация на строительную специфику</h4>
+                            <p>Решение проектируется под реальные сценарии применения в строительной отрасли.</p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6">
+                        <div class="adv-card">
+                            <div class="adv-number">04</div>
+                            <h4>Сочетание аналитики и цифровых моделей</h4>
+                            <p>Система объединяет аналитику, цифровые модели и ИИ-рекомендации в одном контуре.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="survey" class="section-padding section-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Помогите нам стать лучше</h2>
+                <p>Опрос помогает собрать общую статистику и понять, какие функции платформы наиболее востребованы.</p>
+            </div>
+
+            {% if messages %}
+                {% for message in messages %}
+                    {% if 'survey' in message.tags %}
+                        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            <div class="form-block">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="survey">
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label">Компания</label>
+                            <input type="text" name="company" class="form-control" placeholder="Введите название компании">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Должность</label>
+                            <input type="text" name="position" class="form-control" placeholder="Введите должность">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">1. Вы часто сталкиваетесь с ситуацией, когда информация в ходе проекта поступает с опозданием?</label>
+                            <select name="q1" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">2. Считаете ли вы, что ваши руководители перегружены рутиной в ушерб страгетическим задачам?</label>
+                            <select name="q2" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">3. Случалось ли, что уход ключевого сотрудника приводил к потере критически важной информации в проекте?</label>
+                            <select name="q3" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">4. Возникают ли на ваших проектах конфликты между участниками из-за несогасованности данных?</label>
+                            <select name="q4" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">5. Приходится ли вам регулярно тушить «пожары» вместо того, чтобы работать на опережение?</label>
+                            <select name="q5" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">6. Уверены ли вы, что текущие инструменты планирования (MS Project, Excel) справляются со сложностью ваших проектов?</label>
+                            <select name="q6" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">7. Оцените, насколько точно вы можете спрогнозировать сроки завершения проекта сегодня?</label>
+                            <select name="q7" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">8. Часто ли возникают просто из-за несвоевременной поставки материалов или недоступности ресурсов?</label>
+                            <select name="q8" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">9. Внедрены ли у вас BIM-технологии, и используют ли их для управления строительством?</label>
+                            <select name="q9" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">10. Заинтересованы ли вы в системах, которые автоматически предлагают корректирующие решения при отклонениях от плана?</label>
+                            <select name="q10" class="form-select" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-main">Отправить опрос</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Оставить заявку</h2>
+                <p>Оставьте контактную информацию, и мы свяжемся с вами для обсуждения партнёрского участия.</p>
+            </div>
+
+            {% if messages %}
+                {% for message in messages %}
+                    {% if 'partner' in message.tags %}
+                        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            <div class="form-block">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="form_type" value="partner">
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label class="form-label">Имя</label>
+                            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Компания</label>
+                            <input type="text" name="company" class="form-control" placeholder="Название компании">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Должность</label>
+                            <input type="text" name="position" class="form-control" placeholder="Ваша должность">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Телефон</label>
+                            <input type="text" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Сообщение</label>
+                            <textarea name="message" class="form-control" rows="5" maxlength="1000" placeholder="Введите сообщение"></textarea>
+                            <div class="form-text">Максимум 1000 символов</div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-main btn-lg">Отправить заявку</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="contacts" class="site-footer-main">
+    <div class="container">
+        <div class="footer-top">
+            <h2>Контакты</h2>
+            <div class="footer-contacts">
+                <span>Россия, Новосибирск, Академгородок</span>
+                <span>info@apexmind.ru</span>
+                <span>apexmind.ru</span>
+            </div>
+            <p class="footer-cta">Станьте пилотным партнёром</p>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 APEX MIND</p>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

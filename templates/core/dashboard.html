@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %}
+{% block title %}Статистика опроса{% endblock %}
+
+{% block content %}
+<section class="section-padding dashboard-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>Статистика опроса</h2>
+            <div class="dashboard-badge">
+                Панель аналитики
+            </div>
+            <p>Сводные результаты по ответам пользователей.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <p class="mb-0 dashboard-total"><strong>Всего ответов:</strong> {{ total_responses }}</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h4 class="mb-4">Средние оценки по вопросам</h4>
+            <div class="dashboard-chart-wrap">
+                <canvas id="surveyChart"></canvas>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h4 class="mb-4">Средние значения</h4>
+            <div class="dashboard-table">
+                <table class="table table-bordered align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Вопрос</th>
+                            <th>Средний балл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Вопрос 1</td><td>{{ avg_q1|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 2</td><td>{{ avg_q2|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 3</td><td>{{ avg_q3|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 4</td><td>{{ avg_q4|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 5</td><td>{{ avg_q5|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 6</td><td>{{ avg_q6|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 7</td><td>{{ avg_q7|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 8</td><td>{{ avg_q8|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 9</td><td>{{ avg_q9|floatformat:2 }}</td></tr>
+                        <tr><td>Вопрос 10</td><td>{{ avg_q10|floatformat:2 }}</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <div class="dashboard-actions">
+                <a href="/" class="btn btn-main">Вернуться на сайт</a>
+                <a href="/admin/" class="btn btn-outline-dark">Перейти в админку</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const chartLabels = ['В1', 'В2', 'В3', 'В4', 'В5', 'В6', 'В7', 'В8', 'В9', 'В10'];
+    const chartData = JSON.parse('{{ chart_values_json|escapejs }}');
+
+    const ctx = document.getElementById('surveyChart').getContext('2d');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: chartLabels,
+            datasets: [{
+                label: 'Средний балл',
+                data: chartData
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: true
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 5
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}
